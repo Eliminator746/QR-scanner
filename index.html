@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        background-color: hsl(212, 45%, 89%);
+      }
+      section{
+        display: flex;
+       align-items: center;
+       justify-content: center; 
+       height: 100vh;
+      }
+      .outer {
+       
+        background-color: hsl(0, 0%, 100%);
+        padding: 1.2rem;
+        border-radius: 20px;
+        
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        width: min(80%,20.5rem);
+        /* margin:1.2rem; --> i removed bec without width as screen size increases outer box also increased */
+      }
+
+      .container {
+        text-align: center;
+        font-family: "Outfit", sans-serif;
+      }
+    
+      @media (min-width: 1024px) {
+
+      }
+      div img{
+        margin-top: 0.3rem;
+      }
+      img {
+        width: 100%;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      }
+      .content h2 {
+        margin-bottom: 0.8em;
+        font-size: 1.6em;
+        line-height: 1.1;
+        font-weight: 700;
+        margin-top: 0.9rem;
+      }
+      .content p {
+        color: rgb(179, 171, 159);
+        font-size: 20px;
+
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    
+
+Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+Coded by <a href="#">Anish Kumar</a>.
+   <section>
+    <div class="outer">
+      <div class="container">
+        <div>
+          <img src="/images/image-qr-code.png" alt="Error loading QR code" />
+        </div>
+        <div class="content">
+          <h2>Improve your front-end skills by building projects</h2>
+          <p>
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </div>
+    </div>
+   </section>
+  </body>
+</html>
